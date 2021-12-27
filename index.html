@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        <meta name="viewport" content ="width=device-width, initial-scale=1.0">
+        <title>Portofolio Raihan.P.F</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="header">
+            <nav>
+                <img src="assets/images/logo.png" class="logo">
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#portofolio">PORTOFOLIO</a></li>
+                    <li><a href="#certificate">CERTIFICATE</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <img src="assets/images/menu.png" class="menu-icon">
+            </nav>
+            
+            <div class="text-box">
+                <h1>I'm <span class="auto-input"></span></h1>
+                <p>You can reach out to me if you need any help about <br>developing website, UI/UX Design, Data Analytics</p>
+                <a href="mailto:raihanpambagyo@gmail.com">Contact Me</a>
+                <a href="https://drive.google.com/file/d/15JCghZRmmekdYqezWMe3s3bjT1fOyItH/view?usp=sharing" class="btn">Download CV</a>
+                
+            </div>
+            <img src="assets/images/user.png" class="user-img" id="user-img">
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+            //Script Autotype
+            var typed = new Typed(".auto-input", {
+                strings: ["Raihan Pambagyo", "Web Developer","UI/UX Designer", "Data Analyst"],
+                typeSpeed: 100,
+                backSpeed: 100,
+                loop: true
+            })
+
+                //Script Hamburger
+                const hamburger = document.querySelector(".hamburger");
+                const navMenu = document.querySelector("nav ul");
+                
+
+                hamburger.addEventListener("click", mobileMenu);
+
+                function mobileMenu() {
+                    hamburger.classList.toggle("active");
+                    navMenu.classList.toggle("active");
+                    document.getElementById("user-img").style.display='none';
+                    
+                }
+                const navLink = document.querySelectorAll("nav ul li a");
+
+                navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+                function closeMenu() {
+                    hamburger.classList.remove("active");
+                    navMenu.classList.remove("active");
+                    document.getElementById("user-img").style.display='block';
+                }
+        </script>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#020412" fill-opacity="1" d="M0,128L15,154.7C30,181,60,235,90,261.3C120,288,150,288,180,272C210,256,240,224,270,197.3C300,171,330,149,360,154.7C390,160,420,192,450,208C480,224,510,224,540,208C570,192,600,160,630,144C660,128,690,128,720,160C750,192,780,256,810,272C840,288,870,256,900,234.7C930,213,960,203,990,170.7C1020,139,1050,85,1080,101.3C1110,117,1140,203,1170,245.3C1200,288,1230,288,1260,293.3C1290,299,1320,309,1350,293.3C1380,277,1410,235,1425,213.3L1440,192L1440,0L1425,0C1410,0,1380,0,1350,0C1320,0,1290,0,1260,0C1230,0,1200,0,1170,0C1140,0,1110,0,1080,0C1050,0,1020,0,990,0C960,0,930,0,900,0C870,0,840,0,810,0C780,0,750,0,720,0C690,0,660,0,630,0C600,0,570,0,540,0C510,0,480,0,450,0C420,0,390,0,360,0C330,0,300,0,270,0C240,0,210,0,180,0C150,0,120,0,90,0C60,0,30,0,15,0L0,0Z"></path></svg>
+
+
+        <div class="content">
+            <article id="about" class="card-content">
+                <h1>About Me</h1>
+                <br>
+                <p class="motto">"A Winner Is Just A Loser Who Tried One More Time"</p>
+                <br>
+                <p>I am a student majoring in informatics engineering,
+                    I am currently in the 7th semester, 
+                    with a GPA of 3.66, I am able to work individually or collaborate with the team, 
+                    adaptive, and keep up with the development of the world of technology, 
+                    I have skills for UI / UX Design, Web Developing, I understand several web 
+                    or mobile frameworks including react native, laravel, postman and tools 
+                    for design including figma, photoshop, and some of library python for data analytics. Check my details below</p>
+            </article>
+
+            <article id="portofolio" class="card-content">
+                <h1>Portofolio</h1>
+                <br>
+                <div class="container">
+                    <div class="row">
+                      <div class="col-sm">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/portfolio/portfolio_web_playlist.PNG" class="card-img-top" alt="Portfolio Web Playlist">
+                            <div class="card-body">
+                                <h4 style="font-weight: bold;">Web Playlist Music</h4>
+                              <p class="card-text">Create a mockup design of music playlists for websites, the tools used are figma.</p>
+                              <br><br>
+                              <a href="https://www.figma.com/file/H3WmoaWjHFKH6PjRIuIFNK/Music-Web-Application" class="btn btn-primary">See Details</a>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="col-sm">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/portfolio/portfolio_aplikasi_razaqStore.PNG" class="card-img-top" alt="Portfolio Web Playlist">
+                            <div class="card-body">
+                                <h4 style="font-weight: bold;">Razaq Store system application</h4>
+                              <p class="card-text">Build an purchase application system for razaq store running on android mobile using figma, react native, firebase. </p><br>
+                              <a href="https://www.figma.com/file/CxDsmm54ZNtKtXsdqa5o0K/Mockup-Razaq-Store" class="btn btn-primary">See Details</a>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="col-sm">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/portfolio/portfolio_aplikasi_rekam_medis.PNG" class="card-img-top" alt="Portfolio Web Playlist">
+                            <div class="card-body">
+                                <h4 style="font-weight: bold;">Medical record system application</h4>
+                              <p class="card-text">Create a mockup design of medical record system applications for college assignments using figma. </p>
+                              <a href="https://www.figma.com/file/vk1oOXNHTzSFLzMg6FVnRh/Apk-Rekam-Medis" class="btn btn-primary">See Details</a>
+                            </div>
+                          </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/portfolio/portfolio_video_website_laravel.PNG" class="card-img-top" alt="Portfolio Web Playlist">
+                            <div class="card-body">
+                                <h4 style="font-weight: bold;">Website Video</h4>
+                              <p class="card-text">build a website-based video application using laravel livewire and mysql for databases.</p>
+                              <br><br>
+                              <a href="https://github.com/raihanpf22/website-video-laravel-livewire" class="btn btn-primary">See Details</a>
+                            </div>
+                          </div>
+                      </div>
+                      </div>
+
+            </article>
+            <article id="certificate" class="card-content">
+                <h1>Certificate</h1>
+                <div class="img-cert1" style="margin-bottom: 100px;margin-top: 100px;background-color: #020412;padding: 10px;">
+                    <img src="assets/certificate/Sertif_GoogleDataAnalytics.jpg" class="img-fluid" alt="..." >
+                </div>
+                <div class="img-cert2" style="margin-bottom: 100px;margin-top: 100px;background-color: #020412;padding: 10px;">
+                    <img src="assets/certificate/Sertif_DeepLearning.jpg" class="img-fluid" alt="..." >
+                </div>
+                <div class="img-cert3" style="margin-bottom: 100px;margin-top: 100px;background-color: #020412;padding: 10px;">
+                    <img src="assets/certificate/Sertif_Cloud.jpg" class="img-fluid" alt="..." >
+                </div>
+                <div class="img-cert4" style="margin-bottom: 100px;margin-top: 100px;background-color: #020412;padding: 10px;">
+                    <img src="assets/certificate/Sertif_DataExploration.jpg" class="img-fluid" alt="..." >
+                </div>
+                <div class="img-cert5" style="margin-bottom: 100px;margin-top: 100px;background-color: #020412;padding: 10px;">
+                    <img src="assets/certificate/Sertif_DataWrangling.jpg" class="img-fluid" alt="..." >
+                </div>
+                <div class="img-cert6" style="margin-bottom: 100px;margin-top: 100px;background-color: #020412;padding: 10px;">
+                    <img src="assets/certificate/Sertif_Exploratory.jpg" class="img-fluid" alt="..." >
+                </div>
+                <div class="img-cert7" style="margin-bottom: 100px;margin-top: 100px;background-color: #020412;padding: 10px;">
+                    <img src="assets/certificate/Sertif_FundamentalPython.jpg" class="img-fluid" alt="..." >
+                </div>
+                <div class="img-cert8" style="margin-bottom: 100px;margin-top: 100px;background-color: #020412;padding: 10px;">
+                    <img src="assets/certificate/Sertif_DasarWeb.jpg" class="img-fluid" alt="..." >
+                </div>
+                <div class="img-cert9" style="margin-bottom: 100px;margin-top: 100px;background-color: #020412;padding: 10px;">
+                    <img src="assets/certificate/ToT.png" class="img-fluid" alt="..." >
+                </div>
+                <div class="img-cert10" style="margin-bottom: 100px;margin-top: 100px;background-color: #020412;padding: 10px;">
+                    <img src="assets/certificate/Seminar1.jpg" class="img-fluid" alt="..." >
+                </div>
+                <div class="img-cert11" style="margin-bottom: 100px;margin-top: 100px;background-color: #020412;padding: 10px;">
+                    <img src="assets/certificate/Seminar2.jpg" class="img-fluid" alt="..." >
+                </div>
+                <div class="img-cert12" style="margin-bottom: 100px;margin-top: 100px;background-color: #020412;padding: 10px;">
+                    <img src="assets/certificate/WeeklyClass.jpg" class="img-fluid" alt="..." >
+                </div>
+                <div class="text-right">
+                    <a href="https://www.linkedin.com/in/raihan-pambagyo-fadhila-654716172/" class="btn btn-primary" style="align-items: flex-end;">Check on Linkedin</a>
+                </div>
+                
+                <br>
+                <br>
+            </article>
+
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#020412" fill-opacity="1" d="M0,96L17.1,128C34.3,160,69,224,103,213.3C137.1,203,171,117,206,74.7C240,32,274,32,309,37.3C342.9,43,377,53,411,96C445.7,139,480,213,514,224C548.6,235,583,181,617,149.3C651.4,117,686,107,720,122.7C754.3,139,789,181,823,197.3C857.1,213,891,203,926,186.7C960,171,994,149,1029,128C1062.9,107,1097,85,1131,112C1165.7,139,1200,213,1234,202.7C1268.6,192,1303,96,1337,53.3C1371.4,11,1406,21,1423,26.7L1440,32L1440,320L1422.9,320C1405.7,320,1371,320,1337,320C1302.9,320,1269,320,1234,320C1200,320,1166,320,1131,320C1097.1,320,1063,320,1029,320C994.3,320,960,320,926,320C891.4,320,857,320,823,320C788.6,320,754,320,720,320C685.7,320,651,320,617,320C582.9,320,549,320,514,320C480,320,446,320,411,320C377.1,320,343,320,309,320C274.3,320,240,320,206,320C171.4,320,137,320,103,320C68.6,320,34,320,17,320L0,320Z"></path></svg>
+
+        <footer>
+            <p>Portofolio Raihan pambagyo Fadhila &#169; 2021</p>
+        </footer>
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+
+
+    </body>
+</html>
